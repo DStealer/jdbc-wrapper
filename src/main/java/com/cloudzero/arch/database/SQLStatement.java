@@ -194,7 +194,7 @@ public class SQLStatement {
          * @return
          */
         public Builder appendIn(String sqlSegment, Object... params) {
-            this.append(true, sqlSegment, params);
+            this.appendIn(true, sqlSegment, params);
             return this;
         }
 

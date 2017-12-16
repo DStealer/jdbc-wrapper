@@ -445,7 +445,7 @@ public class SQLExecutor {
             ResultSetMetaData rsmd = resultSet.getMetaData();
             Map<String, Integer> rsmdMap = new HashMap<>();
             for (int i = 1; i <= rsmd.getColumnCount(); i++) {
-                rsmdMap.put(rsmd.getColumnName(i), rsmd.getColumnType(i));
+                rsmdMap.put(rsmd.getColumnLabel(i), rsmd.getColumnType(i));
             }
             List<Map<String, String>> rsList = new ArrayList<>();
             Map<String, String> rowMap;
